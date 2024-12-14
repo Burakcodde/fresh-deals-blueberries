@@ -1,0 +1,16 @@
+.breadcrumb li {
+  display: inline;
+}
+
+.breadcrumb li.location + li::before {
+  content: " / ";
+}
+
+.breadcrumb li.attribute a {
+  color: gray;
+}
+
+.breadcrumb li.attribute::after {
+  content: "x";;
+  vertical-align: super;
+}
